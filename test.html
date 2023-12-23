@@ -9,66 +9,159 @@
   <script src="script/scr.js" defer></script>
 </head>
 <body>
-  <nav id="toppanel" class="toppanel"> <!-- Верхняя панель -->
-    <div class="container">
-      <ul>
-        <li><img src="images/TGK_logo.png" alt="Kronus Group"></li>
-          <div class="dropdown">
-            <li>
-              <p> 
-                KRONUS <br />
-                  GROUP
-                <div class="dropdown-content">
-                  <div class="avatar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="white">
-                      <circle cx="20" cy="20" r="20" fill="black"/>
-                      </svg>
-                    <p>KRONUS <br/>
-                      GROUP</p>
-                  </div>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>PROJECTS</th>
-                          <th>TKG</th>
-                          <th>BUSINESS</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th>BEASTS OF BERMUDA</th>
-                          <th>ABOUT US</th>
-                          <th>SAMPLENAME@GMAIL.COM</th>
-                        </tr>
-                        <tr>
-                          <th>THE ISLE EVRIMA</th>
-                          <th>SOCIAL</th>
-                          <th>FOR ADS AND OTHER</th>
-                        </tr>
-                        <tr>
-                          <th>OTHER IN DEVELOPMENT</th>
-                          <th>DEVLOGS</th>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-              </p>
-            </li>
-          </div> 
-        <li>
-          <a class="" href="index.html">
-            <svg class="home">
-              <use xlink:href="/style/sprite/sprite.svg#home"></use>
-            </svg>
-            HOME
-          </a>
-        </li>
-        <li><a class="" href="news.html"><img src="images/white_home.png" alt=""> NEWS</a></li>
-        <li><a class="active" href="test.html"><img src="images/red_home.png" alt=""> TEST MY ASS</a></li>
-        <li><a class="btn-toggle" href="#">ANOTHER THEME</a></li>
-      </ul>
+  <div id="toppanel" class="toppanel">
+    <div class="line-1"><a id="panel" href="#close"><img src="images/TGK_logo.png" alt="Kronus Group"> KRONUS <br />
+        GROUP <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+          <path d="M13 1L7.70711 6.68539C7.31658 7.10487 6.68342 7.10487 6.29289 6.68539L1 1" stroke="#646464"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg></a></div>
+    <div class="line-2"><a class="" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
+            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+        HOME</a></div>
+    <div class="line-3">
+      <a class="" href="news.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
+            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+        </svg>
+        NEWS
+      </a>
     </div>
-  </nav> <!-- Верхняя панель -->
+    <div class="line-4"><a class="btn-toggle" href="#close">ANOTHER THEME</a></div>
+    <div class="line-5"><a class="" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
+          <path
+            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
+            stroke="#646464" stroke-width="2" stroke-linejoin="round" class="active" />
+        </svg>
+        TEST MY ASS</a></div>
+    <div id="dropdown">
+      <div class="content">
+        <div class="avatar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+            <circle cx="20" cy="20" r="20" fill="black" />
+          </svg>
+          <p>KRONUS <br />
+            GROUP</p>
+        </div>
+        <div class="dropdown_content">
+          <div class="dropdown_content_line">
+            <table>
+              <thead>
+                <tr>
+                  <th>PROJECTS</th>
+                  <th>TKG</th>
+                  <th>BUSINESS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><a href="#close">BEASTS OF BERMUDA</a></th>
+                  <th><a href="#close">ABOUT US</a></th>
+                  <th>SAMPLENAME@GMAIL.COM</th>
+                </tr>
+                <tr>
+                  <th><a href="#close">THE ISLE EVRIMA</a></th>
+                  <th><a href="#close">SOCIAL</a></th>
+                  <th><a href="#close">FOR ADS AND OTHER</a></th>
+                </tr>
+                <tr>
+                  <th><a href="#close">OTHER IN DEVELOPMENT</a></th>
+                  <th><a href="#close">DEVLOGS</a></th>
+                </tr>
+              </tbody>
+            </table>
+            <div class="toppanel_news_line"> <!-- Новостная лента -->
+              <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-interval="5000">
+                <!-- Слайдер -->
+                <div class="itc-slider-wrapper">
+                  <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                      <!-- Контент 1 слайда -->
+                      <ul>
+                        <li><a href="#openModal_1"><img src="images/news_line1.png" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 2 слайда -->
+                      <ul>
+                        <li><a href="#openModal_2"><img src="images/news_line2.png" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 3 слайда -->
+                      <ul>
+                        <li><a href="#openModal_3"><img src="images/news_line3.png" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 4 слайда -->
+                      <ul>
+                        <li><a href="#openModal_4"><img src="images/news_line4.png" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 5 слайда -->
+                      <ul>
+                        <li><a href="#openModal_5"><img src="images/ForTestFrowGhost/5.jpg" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 6 слайда -->
+                      <ul>
+                        <li><a href="#openModal_6"><img src="images/ForTestFrowGhost/6.jpg" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 7 слайда -->
+                      <ul>
+                        <li><a href="#openModal_7"><img src="images/ForTestFrowGhost/7.jpg" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="itc-slider-item">
+                      <!-- Контент 8 слайда -->
+                      <ul>
+                        <li><a href="#openModal_8"><img src="images/ForTestFrowGhost/8.jpg" alt=""></a></li>
+                        <li>
+                          <p>Check out new stuff and other</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- Слайдер -->
+            </div> <!-- Новостная лента -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Верхняя панель -->
     <div class="poster"> <!-- Главный постер -->
       <img src="/Frame2/images/Poster_Up.png" alt="">
     </div> <!-- Главный постер -->

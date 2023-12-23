@@ -70,6 +70,11 @@
   margin-left: 0.7vh;
 }
 
+@media (width > 1919px) {
+  .toppanel a {
+    font-size: 1.1vh;
+  }
+}
 #dropdown {
   transition: 1s;
   border-radius: 1em;
@@ -600,6 +605,10 @@
 .for_dot {
   margin-right: 6%;
   text-align: center;
+}
+.for_dot svg {
+  width: 3vh;
+  height: 3vh;
 }
 
 /* Footer*/

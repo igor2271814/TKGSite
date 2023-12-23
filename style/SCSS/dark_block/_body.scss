@@ -1,0 +1,288 @@
+/* Тело сайта */
+/* постер */
+.poster {
+    margin: 0 0 0 0;
+}
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+/* постер */
+/* Строка новостей */
+.text_center {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+.text_center H1 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0;
+    text-shadow:
+        0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+    color: var(--red, #c83232);
+    font-family: Plus Jakarta Sans;
+    font-size: 7vh;
+    font-style: bold;
+}
+/* текст над строкой */
+.text {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2%;
+
+    H1 {
+        vertical-align: middle;
+        margin: auto 0;
+        display: inline;
+        text-shadow:
+            0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1),
+            0px 18px 23px rgba(0, 0, 0, 0.1);
+        float: left;
+        margin-left: 5%;
+        color: var(--red, #c83232);
+        font-family: Plus Jakarta Sans;
+        font-size: 7vh;
+        font-style: italic;
+    }
+    H2 {
+        vertical-align: middle;
+        transition: 1s;
+        display: inline;
+        text-shadow:
+            0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1),
+            0px 18px 23px rgba(0, 0, 0, 0.1);
+        color: var(--red, #c83232);
+        margin-right: 5%;
+        float: right;
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-style: normal;
+    }
+    H2:hover {
+        color: rgb(175, 175, 175);
+        transition: 1s;
+        text-shadow:
+            0px 4px 3px rgba(0, 0, 0, 0.4),
+            0px 8px 13px rgba(0, 0, 0, 0.1),
+            0px 18px 23px rgba(0, 0, 0, 0.1);
+        filter: drop-shadow(5px 5px 5px rgba(190, 62, 62, 0.5));
+    }
+}
+@media (width > 1920px) {
+    .text H2 {
+        font-size: 2vh;
+    }
+    .text H1 {
+        font-size: 5vh;
+    }
+}
+
+/* стрелка */
+.arrow {
+    fill: #c83232;
+    transition: 1s;
+    width: 57px;
+    height: 16px;
+
+    &:hover {
+        fill: rgb(175, 175, 175);
+        transition: 0.4s;
+    }
+}
+/* стрелка */
+/* текст над строкой */
+.news_line {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    height: 30%;
+
+    ul {
+        float: left;
+        list-style-type: none;
+        padding-left: 0.5%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    em {
+        margin-left: 5px;
+        color: red;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.75vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.15px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    p {
+        color: var(--white, #e7e7e7);
+        text-align: left;
+        /* Body/S/Medium */
+        font-family: Plus Jakarta Sans;
+        font-size: 1.31vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px; /* 150% */
+        letter-spacing: 0.15px;
+    }
+    h2 {
+        color: var(--black, #e7e7e7);
+        text-align: left;
+        /* Heading/XS/Bold */
+        font-family: Plus Jakarta Sans;
+        font-size: 2.1vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 160% */
+    }
+}
+@media (width > 1920px) {
+    .news_line H2 {
+        font-size: 2vh;
+        line-height: 1.2;
+    }
+    .news_line p {
+        font-size: 2vh;
+        line-height: 1.2;
+    }
+    .news_line em {
+        font-size: 2vh;
+        line-height: 1.2;
+    }
+}
+/* Строка новостей */
+/* Нижний постер */
+.poster_down {
+    margin: 0 0 0 0;
+}
+.poster_down li {
+    display: inline-block;
+}
+.poster_down img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/* Нижний постер */
+/* Текст под постером*/
+.down_text {
+    margin-left: 4%;
+    margin-right: 4%;
+
+    & a {
+        text-decoration: none;
+        color: #6b6666;
+        transition: 0.7s;
+    }
+
+    & a:hover {
+        transition: 0.7s;
+        color: #c83232;
+        font-size: 4vh;
+    }
+
+    li {
+        vertical-align: text-top;
+        margin: auto 0;
+        list-style-type: none;
+        display: inline-block;
+        width: 45%;
+    }
+
+    h1 {
+        margin-top: 0;
+        color: #ffffff;
+        font-family: Bruce Forever;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.15px;
+    }
+    p {
+        color: #ffffff;
+        /* Heading/XS/Medium */
+        font-family: Plus Jakarta Sans;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px; /* 160% */
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        margin-left: 6%;
+        box-shadow:
+            0px 4px 3px rgba(70, 69, 69, 0.4),
+            0px 8px 13px rgba(70, 69, 69, 0.1),
+            0px 18px 23px rgba(70, 69, 69, 0.1);
+    }
+}
+@media (width > 1440px) {
+    .down_text h1 {
+        font-size: 5vh;
+        line-height: 1.2;
+    }
+    .down_text p {
+        font-size: 3vh;
+        line-height: 1.2;
+    }
+}
+.button {
+    margin-top: 4%;
+    margin-left: 4%;
+
+    li {
+        font-family: Plus Jakarta Sans;
+        margin-left: 0.7%;
+        margin-right: 0.7%;
+        display: flex;
+        list-style-type: none;
+        display: inline-block;
+        width: 43.5%;
+        background-color: #c83232;
+        outline-offset: 8px;
+        outline: 2px solid #c83232;
+        box-shadow: inset 0 0px 0 #ffffff;
+        transition: 1s;
+        align-items: center;
+    }
+    li:hover {
+        box-shadow:
+            inset 0 -117px 0 #000000,
+            2px 2px 3px rgba(0, 0, 0, 0.3);
+        color: #decda5;
+        transition: 1s;
+    }
+    p {
+        color: #fff;
+        margin: 2% auto 2% auto;
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 36px;
+        font-style: normal;
+    }
+}
+@media (width > 1920px) {
+    .button p {
+        font-size: 3vh;
+    }
+}
+/* Текст под постером*/
