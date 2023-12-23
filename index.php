@@ -1,45 +1,44 @@
+<?php
+// Получаем текущий timestamp
+$timestamp = time();
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>TGK</title>
   <link type="image/png" sizes="16x16" rel="icon" href="images/frame.png">
-  <link rel="stylesheet" href="style/CSS/itc-slider.css">
-  <link rel="stylesheet" type="text/css" href="style/CSS/styles.css?ver=0.8.6" id="theme-link">
+  <link rel="stylesheet" href="style/CSS/itc-slider.css?ver=<?php echo $cssUrl; ?>">
+  <link rel="stylesheet" type="text/css" href="style/CSS/styles.css?ver=<?php echo $cssUrl; ?>" id="theme-link">
   <script src="script/itc-slider.js" defer></script>
   <script src="script/scr.js" defer></script>
 </head>
 
 <body>
+  <!-- Верхняя панель -->
   <div id="toppanel" class="toppanel">
     <div class="line-1"><a id="panel" href="#close"><img src="images/TGK_logo.png" alt="Kronus Group"> KRONUS <br />
         GROUP <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
-          <path d="M13 1L7.70711 6.68539C7.31658 7.10487 6.68342 7.10487 6.29289 6.68539L1 1" stroke="#646464"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 1L7.70711 6.68539C7.31658 7.10487 6.68342 7.10487 6.29289 6.68539L1 1" stroke="#646464" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg></a></div>
-    <div class="line-2"><a class="" href="index.html">
+    <div class="line-2"><a class="" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" class="active" />
         </svg>
         HOME</a></div>
     <div class="line-3">
-      <a class="" href="#">
+      <a class="" href="news.php">
         <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" class="active" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" />
         </svg>
         NEWS
       </a>
     </div>
     <div class="line-4"><a class="btn-toggle" href="#close">ANOTHER THEME</a></div>
-    <div class="line-5"><a class="" href="test.html">
+    <div class="line-5"><a class="" href="test.php">
         <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" />
         </svg>
         TEST MY ASS</a></div>
     <div id="dropdown">
@@ -79,8 +78,7 @@
               </tbody>
             </table>
             <div class="toppanel_news_line"> <!-- Новостная лента -->
-              <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-interval="5000">
-                <!-- Слайдер -->
+              <div class="itc-slider" data-slider="itc-slider" data-autoplay="false" data-interval="5000"> <!-- Слайдер -->
                 <div class="itc-slider-wrapper">
                   <div class="itc-slider-items">
                     <div class="itc-slider-item">
@@ -167,8 +165,16 @@
   <div class="poster"> <!-- Главный постер -->
     <img src="images/Poster_Up.png" alt="">
   </div> <!-- Главный постер -->
-  <div class="text_center">
+  <div class="text">
     <H1>LATEST NEWS</H1>
+    <a href="news.php">
+      <H2>
+        GO TO THE PAGE NEWS
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="57" height="16" viewBox="0 0 57 16">
+          <path d="M56.6776 8.70711C57.0682 8.31658 57.0682 7.68342 56.6776 7.29289L50.3137 0.928932C49.9231 0.538408 49.29 0.538408 48.8995 0.928932C48.5089 1.31946 48.5089 1.95262 48.8995 2.34315L54.5563 8L48.8995 13.6569C48.5089 14.0474 48.5089 14.6805 48.8995 15.0711C49.29 15.4616 49.9231 15.4616 50.3137 15.0711L56.6776 8.70711ZM0 9H55.9705V7H0V9Z"></path>
+        </svg>
+      </H2>
+    </a>
   </div>
   <div class="news_line"> <!-- Новостная лента -->
     <div class="itc-slider" data-slider="itc-slider" data-autoplay="true" data-interval="5000"> <!-- Слайдер -->
@@ -277,32 +283,55 @@
       <button class="itc-slider-btn itc-slider-btn-next"></button>
     </div> <!-- Слайдер -->
   </div> <!-- Новостная лента -->
+  <div class="poster_down">
+    <a href="#"><img src="images/Poster_Down.png" alt=""></a>
+  </div>
+  <div class="down_text">
+    <ul>
+      <li>
+        <h1>МЫ КОМАНДА</h1>
+        <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду <a href="https://luchdobrafound.ru/">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой новый дом. Один из проверенных способов это сделать — помочь благотворительному фонду <a href="https://luchdobrafound.ru/">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой новый дом.</p>
+      </li>
+      <li><video autoplay loop muted>
+          <source src="Video/exemple.mp4" type="video/mp4">
+        </video></li>
+    </ul>
+  </div>
+  <div class="button">
+    <ul>
+      <a href="#">
+        <li>
+          <p>DISCORD HERE</p>
+        </li>
+      </a>
   </div>
   <div class="footer">
     <div class="for_dot">
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="16" fill="#D9D9D9"/>
-            </svg>
+            <circle cx="16" cy="16" r="16" fill="#D9D9D9" />
+          </svg>
         </li>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="16" fill="#D9D9D9"/>
-            </svg>
+            <circle cx="16" cy="16" r="16" fill="#D9D9D9" />
+          </svg>
         </li>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="16" fill="#D9D9D9"/>
-            </svg>
+            <circle cx="16" cy="16" r="16" fill="#D9D9D9" />
+          </svg>
         </li>
       </ul>
     </div>
-    <div class="link"><p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду <a href="https://luchdobrafound.ru/">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой новый дом.</p></div>
+    <div class="link">
+      <p>Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось иметь ласковых хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному фонду <a href="https://luchdobrafound.ru/">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой новый дом.</p>
+    </div>
     <div class="bottom_panel">
       <ul>
         <li>
-            <a href="#">НАСТРОЙКИ COOKIE</a>
+          <a href="#">НАСТРОЙКИ COOKIE</a>
         </li>
         <li>
           <a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
@@ -319,12 +348,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -365,12 +394,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -411,12 +440,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -457,12 +486,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -503,12 +532,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -549,12 +578,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -595,12 +624,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -641,12 +670,12 @@
       <div class="modal-content">
         <div class="modal-header">
         </div>
-        <div class="modal-body">    
+        <div class="modal-body">
           <ul>
             <li class="date">12.07.2023</li>
             <li class="title">RELEASE OF KRONUS ETERNITY</li>
             <li class="this_is_the_base">Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.</li>
-            <li class="this_is_the_base"><b>Vitae venenatis</b></li> 
+            <li class="this_is_the_base"><b>Vitae venenatis</b></li>
             <li class="this_is_the_base">
               Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.Vestibulum vitae venenatis velit, et posuere sapien. Aliquam ullamcorper vestibulum sapien, sed pellentesque dolor imperdiet nec.
             </li>
@@ -683,5 +712,6 @@
   </div>
   <script src="script/scr.js"></script>
   <script src="script/theme.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,33 +1,35 @@
+<?php
+// Получаем текущий timestamp
+$timestamp = time();
+?>
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>TGK</title>
-  <link rel="stylesheet" href="style/CSS/itc-slider.css">
-  <link rel="stylesheet" type="text/css" href="style/CSS/styles.css?ver=0.8.6" id="theme-link">
+  <link type="image/png" sizes="16x16" rel="icon" href="images/frame.png">
+  <link rel="stylesheet" href="style/CSS/itc-slider.css?ver=<?php echo $cssUrl; ?>">
+  <link rel="stylesheet" type="text/css" href="style/CSS/styles.css?ver=<?php echo $cssUrl; ?>" id="theme-link">
   <script src="script/itc-slider.js" defer></script>
   <script src="script/scr.js" defer></script>
 </head>
+
 <body>
   <div id="toppanel" class="toppanel">
     <div class="line-1"><a id="panel" href="#close"><img src="images/TGK_logo.png" alt="Kronus Group"> KRONUS <br />
         GROUP <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
-          <path d="M13 1L7.70711 6.68539C7.31658 7.10487 6.68342 7.10487 6.29289 6.68539L1 1" stroke="#646464"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13 1L7.70711 6.68539C7.31658 7.10487 6.68342 7.10487 6.29289 6.68539L1 1" stroke="#646464" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg></a></div>
-    <div class="line-2"><a class="" href="index.html">
+    <div class="line-2"><a class="" href="index.php">
         <svg xmlns="http://www.w3.org/2000/svg" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" />
         </svg>
         HOME</a></div>
     <div class="line-3">
-      <a class="" href="news.html">
+      <a class="" href="news.php">
         <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" />
         </svg>
         NEWS
       </a>
@@ -35,9 +37,7 @@
     <div class="line-4"><a class="btn-toggle" href="#close">ANOTHER THEME</a></div>
     <div class="line-5"><a class="" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" class="home" width="3vh" height="3vh" viewBox="0 0 18 18" fill="none">
-          <path
-            d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z"
-            stroke="#646464" stroke-width="2" stroke-linejoin="round" class="active" />
+          <path d="M7.22222 13.4444H10.7778M14.3333 17H3.66667C2.19391 17 1 15.8061 1 14.3333V9C1 8.29275 1.28095 7.61448 1.78105 7.11438L7.11438 1.78105C8.15578 0.73965 9.84422 0.73965 10.8856 1.78105L16.219 7.11438C16.719 7.61448 17 8.29275 17 9V14.3333C17 15.8061 15.8061 17 14.3333 17Z" stroke="#646464" stroke-width="2" stroke-linejoin="round" class="active" />
         </svg>
         TEST MY ASS</a></div>
     <div id="dropdown">
@@ -162,77 +162,80 @@
       </div>
     </div>
   </div> <!-- Верхняя панель -->
-    <div class="poster"> <!-- Главный постер -->
-      <img src="/Frame2/images/Poster_Up.png" alt="">
-    </div> <!-- Главный постер -->
-    <!-- Test zone -->
+  <div class="poster"> <!-- Главный постер -->
+    <img src="/Frame2/images/Poster_Up.png" alt="">
+  </div> <!-- Главный постер -->
+  <!-- Test zone -->
 
-    <div class="button">
-      <ul>
-        <a href="#openModal">
-          <li><p>DISCORD HERE</p></li>
-        </a>
-    </div>
-    <div id="openModal" class="modal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title">NEW ASS DAMAGE & MAX FISTING RAMPAGE</h3>
-            <a href="#close" title="Close" class="close">×</a>
-          </div>
-          <div class="modal-body">    
-            <ul>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-      <li>Содержание</li>
-  
-      </ul>
-          </div>
+  <div class="button">
+    <ul>
+      <a href="#openModal">
+        <li>
+          <p>DISCORD HERE</p>
+        </li>
+      </a>
+  </div>
+  <div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">NEW ASS DAMAGE & MAX FISTING RAMPAGE</h3>
+          <a href="#close" title="Close" class="close">×</a>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+            <li>Содержание</li>
+
+          </ul>
         </div>
       </div>
     </div>
-    <div class="test">
-      <a href="#">I belive i can fly</a>
-    </div>
-    <!-- Test zone -->
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <H1>Somebody once told me the world is gonna roll me</H1>
-    <script src="script/theme.js"></script>
+  </div>
+  <div class="test">
+    <a href="#">I belive i can fly</a>
+  </div>
+  <!-- Test zone -->
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <H1>Somebody once told me the world is gonna roll me</H1>
+  <script src="script/theme.js"></script>
 </body>
+
 </html>
