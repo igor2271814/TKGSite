@@ -70,11 +70,6 @@
   margin-left: 0.7vh;
 }
 
-@media (width > 1919px) {
-  .toppanel a {
-    font-size: 16px;
-  }
-}
 #dropdown {
   transition: 1s;
   border-radius: 1em;
@@ -256,6 +251,14 @@
 }
 
 /* Верхняя панель */
+@media screen and (width > 1919px) {
+  .toppanel {
+    grid-template-rows: repeat(1, 6vh);
+  }
+  .toppanel a {
+    font-size: 16px;
+  }
+}
 /* Тело сайта */
 /* постер */
 .poster {
