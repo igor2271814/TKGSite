@@ -247,7 +247,7 @@
     stroke: #ff1010;
 }
 /* Верхняя панель */
-@media screen and (width > 1919px) {
+@media screen and (width > 1440px) {
     .toppanel {
         grid-template-rows: repeat(1, 6vh);
         a {
