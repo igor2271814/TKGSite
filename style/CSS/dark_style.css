@@ -4,7 +4,7 @@
   transition: 0.7s;
   overflow: auto;
   background: var(--Black, #0f0f0f);
-  z-index: 9999999;
+  z-index: 999;
   position: absolute;
   top: 0;
   width: 100%;
@@ -12,7 +12,7 @@
   gap: 2vh;
   align-items: center;
   grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: repeat(1, 7vh);
+  grid-template-rows: repeat(1, 9vh);
   justify-content: start;
 }
 .toppanel_scrolled {
@@ -52,6 +52,9 @@
 [class^=line-] a:hover {
   color: white;
 }
+[class^=line-] a.active_text {
+  color: #ffffff;
+}
 [class^=line-] path {
   stroke: #646464;
   transition: stroke 0.5s;
@@ -80,7 +83,7 @@
   left: 0;
   width: 100%;
   height: 30%;
-  background-color: white;
+  background-color: rgb(170, 170, 170);
   z-index: 998;
 }
 
@@ -253,10 +256,16 @@
 /* Верхняя панель */
 @media screen and (width > 1440px) {
   .toppanel {
-    grid-template-rows: repeat(1, 6vh);
+    grid-template-rows: repeat(1, 5vh);
   }
   .toppanel a {
-    font-size: 16px;
+    font-size: 12px;
+  }
+  svg {
+    margin-right: 5px;
+    margin-top: -0.5vh;
+    width: 1.7vh;
+    height: 1.7vh;
   }
 }
 /* Тело сайта */
@@ -275,79 +284,46 @@
 }
 
 /* постер */
-/* Строка новостей */
-.text_center {
-  width: 100%;
-  margin-top: 2%;
-  text-align: center;
-}
-
-.text_center H1 {
-  display: inline;
-  vertical-align: middle;
-  margin-left: 0;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  color: var(--red, #c83232);
-  font-family: Plus Jakarta Sans;
-  font-size: 7vh;
-  font-style: bold;
-}
-
 /* текст над строкой */
 .text {
-  display: inline-block;
-  width: 100%;
+  display: grid;
   margin-top: 2%;
+  margin-right: 15vh;
+  margin-left: 12.568vh;
+  grid-template-columns: auto auto auto auto 4vh;
 }
 .text H1 {
-  vertical-align: middle;
   margin: auto 0;
   display: inline;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   float: left;
   margin-left: 5%;
   color: var(--red, #c83232);
   font-family: Plus Jakarta Sans;
-  font-size: 7vh;
+  font-size: 5vh;
   font-style: italic;
 }
 .text H2 {
-  vertical-align: middle;
   transition: 1s;
   display: inline;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   color: var(--red, #c83232);
-  margin-right: 5%;
   float: right;
+  padding-right: 15%;
   font-family: Plus Jakarta Sans;
-  font-size: 20px;
+  font-size: 2vh;
   font-style: normal;
 }
-.text H2:hover {
-  color: rgb(175, 175, 175);
-  transition: 1s;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  filter: drop-shadow(5px 5px 5px rgba(190, 62, 62, 0.5));
+
+[class^=cell-] {
+  display: grid;
+  align-items: center;
 }
 
-@media (width > 1920px) {
-  .text H2 {
-    font-size: 2vh;
-  }
-  .text H1 {
-    font-size: 5vh;
-  }
-}
 /* стрелка */
 .arrow {
   fill: #c83232;
   transition: 1s;
   width: 57px;
   height: 16px;
-}
-.arrow:hover {
-  fill: rgb(175, 175, 175);
-  transition: 0.4s;
 }
 
 /* стрелка */
@@ -422,23 +398,41 @@
 /* Строка новостей */
 /* Нижний постер */
 .poster_down {
-  margin: 0 0 0 0;
+  display: grid;
+  margin: 0;
+  background: url(/TKGSite/images/test1.png) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+}
+.poster_down h1 {
+  font-size: 7vh;
+  color: var(--Noble-Black-100, #E8E9E9);
+  font-family: Bruce Forever;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  text-align: left;
+}
+.poster_down .button {
+  font-family: Plus Jakarta Sans;
+}
+.poster_down .button ul {
+  padding: 0;
+}
+.poster_down .button li {
+  width: 27vw;
+}
+.poster_down .button p {
+  font-size: 2.8vh;
 }
 
-.poster_down li {
-  display: inline-block;
-}
-
-.poster_down img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  top: 0;
-  left: 0;
-  z-index: 99;
+[class^=row-] {
+  display: grid;
+  align-items: center;
+  width: 50vw;
+  margin-left: 8.2vw;
 }
 
 /* Нижний постер */
@@ -638,6 +632,215 @@
 }
 
 /* Нижняя панель*/
+/* Стили всплывающего окна по-умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* фон */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+
+/* При отображении модального окно */
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: 15% auto;
+}
+
+/* Стили для блока с контентом окна */
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eceeef;
+  height: 25vh;
+  background: url(../../images/modal-header.png) no-repeat center center;
+  background-size: cover;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+  float: right;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 9vh;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: 0.8s;
+}
+
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 0.8s;
+}
+
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0 3% 2% 3%;
+  overflow: auto;
+  font-family: Plus Jakarta Sans;
+  color: #030303;
+}
+.modal-body li {
+  padding-bottom: 2%;
+  list-style-type: none;
+  font-family: Plus Jakarta Sans;
+}
+.modal-body li.date {
+  color: var(--noble-black-400, #686b6e);
+  font-size: 1.5vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.15px;
+}
+.modal-body li.title {
+  font-family: Bruce Forever;
+  font-size: 5vh;
+  font-style: normal;
+  line-height: normal;
+}
+.modal-body li.this_is_the_base {
+  color: var(--noble-black-400, #686b6e);
+  font-size: 2.5vh;
+}
+.modal-body li.this_is_the_base b {
+  font-size: 3vh;
+}
+.modal-body li.this_is_the_base_light {
+  color: var(--noble-black-400, #9c9d9e);
+  font-size: 2.5vh;
+}
+
+.modal-footer {
+  display: contents;
+  border-top: 1vh solid #d4d4d4;
+}
+.modal-footer img {
+  margin-left: 4.9%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.modal-footer-content {
+  padding: 0 3% 2% 3%;
+  margin-top: 2%;
+  display: inline-flex;
+}
+.modal-footer-content ul {
+  width: 30%;
+  list-style-type: none;
+  transition: 1s;
+}
+.modal-footer-content img {
+  transition: 1s;
+}
+.modal-footer-content img:hover {
+  background-color: palegoldenrod;
+  transition: 1s;
+  border-radius: 1em;
+  opacity: 0.95;
+}
+
+.moda-footer-block {
+  display: block;
+  margin-left: 2%;
+  font-family: Bruce Forever;
+}
+.moda-footer-block h1 {
+  color: var(--noble-black-400, #686b6e);
+  font-size: 3vh;
+  font-style: normal;
+  line-height: normal;
+}
+.moda-footer-block h2 {
+  color: var(--noble-black-400, #9c9d9e);
+  font-size: 2.5vh;
+}
+.moda-footer-block p {
+  margin-top: 6%;
+  bottom: 0;
+  color: var(--noble-black-400, #57595c);
+  font-size: 2.8vh;
+}
+.moda-footer-block a {
+  text-decoration: none;
+  color: #161616;
+  font-style: italic;
+  transition: 0.8s;
+  opacity: 0.5;
+}
+.moda-footer-block a:hover {
+  font-size: 3.3vh;
+  color: #000000;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+/* Стили всплывающего окна по-умолчанию */
 /* Стили всплывающего окна по-умолчанию */
 .modal {
   position: fixed; /* фиксированное положение */

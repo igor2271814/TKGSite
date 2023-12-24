@@ -4,7 +4,7 @@
   transition: 0.7s;
   overflow: auto;
   background: var(--Black, #0f0f0f);
-  z-index: 9999999;
+  z-index: 999;
   position: absolute;
   top: 0;
   width: 100%;
@@ -12,7 +12,7 @@
   gap: 2vh;
   align-items: center;
   grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: repeat(1, 7vh);
+  grid-template-rows: repeat(1, 9vh);
   justify-content: start;
 }
 .toppanel_scrolled {
@@ -51,6 +51,9 @@
 }
 [class^=line-] a:hover {
   color: white;
+}
+[class^=line-] a.active_text {
+  color: #ffffff;
 }
 [class^=line-] path {
   stroke: #646464;
@@ -253,10 +256,16 @@
 /* Верхняя панель */
 @media screen and (width > 1440px) {
   .toppanel {
-    grid-template-rows: repeat(1, 6vh);
+    grid-template-rows: repeat(1, 5vh);
   }
   .toppanel a {
-    font-size: 16px;
+    font-size: 12px;
+  }
+  svg {
+    margin-right: 5px;
+    margin-top: -0.5vh;
+    width: 1.7vh;
+    height: 1.7vh;
   }
 }
 /* Тело сайта */
@@ -295,63 +304,44 @@
 
 /* текст над строкой */
 .text {
-  display: inline-block;
-  width: 100%;
+  display: grid;
   margin-top: 2%;
+  margin-right: 15vh;
+  margin-left: 12.568vh;
+  grid-template-columns: auto auto auto auto 4vh;
 }
-
 .text H1 {
-  vertical-align: middle;
   margin: auto 0;
   display: inline;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   float: left;
   margin-left: 5%;
   color: var(--red, #c83232);
   font-family: Plus Jakarta Sans;
-  font-size: 7vh;
+  font-size: 5vh;
   font-style: italic;
 }
-
 .text H2 {
-  vertical-align: middle;
   transition: 1s;
   display: inline;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   color: var(--red, #c83232);
-  margin-right: 5%;
   float: right;
+  padding-right: 15%;
   font-family: Plus Jakarta Sans;
-  font-size: 20px;
+  font-size: 2vh;
   font-style: normal;
 }
 
-.text H2:hover {
-  color: black;
-  transition: 1s;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  filter: drop-shadow(5px 5px 5px rgba(179, 169, 169, 0.5));
+[class^=cell-] {
+  display: grid;
+  align-items: center;
 }
 
-@media (width > 1920px) {
-  .text H2 {
-    font-size: 2vh;
-  }
-  .text H1 {
-    font-size: 5vh;
-  }
-}
 /* стрелка */
 .arrow {
   fill: #c83232;
   transition: 1s;
   width: 57px;
   height: 16px;
-}
-
-.arrow:hover {
-  fill: #000000;
-  transition: 1s;
 }
 
 /* стрелка */
@@ -426,30 +416,48 @@
 /* Строка новостей */
 /* Нижний постер */
 .poster_down {
-  margin: 0 0 0 0;
+  display: grid;
+  margin: 0;
+  background: url(/TKGSite/images/test1.png) no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+}
+.poster_down h1 {
+  font-size: 7vh;
+  color: var(--Noble-Black-100, #E8E9E9);
+  font-family: Bruce Forever;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  text-align: left;
+}
+.poster_down .button {
+  font-family: Plus Jakarta Sans;
+}
+.poster_down .button ul {
+  padding: 0;
+}
+.poster_down .button li {
+  width: 27vw;
+}
+.poster_down .button p {
+  font-size: 2.8vh;
 }
 
-.poster_down li {
-  display: inline-block;
-}
-
-.poster_down img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  top: 0;
-  left: 0;
-  z-index: 99;
+[class^=row-] {
+  display: grid;
+  align-items: center;
+  width: 50vw;
+  margin-left: 6vw;
 }
 
 /* Нижний постер */
 /* Текст под постером*/
 .down_text {
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-right: 12.568vh;
+  margin-left: 12.568vh;
 }
 .down_text a {
   text-decoration: none;
@@ -461,7 +469,6 @@
   color: #c83232;
   font-size: 4vh;
 }
-
 .down_text li {
   vertical-align: text-top;
   margin: auto 0;
@@ -469,7 +476,6 @@
   display: inline-block;
   width: 45%;
 }
-
 .down_text h1 {
   margin-top: 0;
   color: #0d0f10;
@@ -479,7 +485,6 @@
   line-height: normal;
   letter-spacing: 0.15px;
 }
-
 .down_text p {
   color: #131619;
   /* Heading/XS/Medium */
@@ -487,17 +492,6 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 32px; /* 160% */
-}
-
-@media (width > 1440px) {
-  .down_text h1 {
-    font-size: 5vh;
-    line-height: 1.2;
-  }
-  .down_text p {
-    font-size: 3vh;
-    line-height: 1.2;
-  }
 }
 .down_text video {
   width: 100%;
@@ -507,7 +501,6 @@
   -o-object-position: bottom;
      object-position: bottom;
   margin-left: 6%;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -546,12 +539,34 @@
   font-style: normal;
 }
 
-@media (width > 1920px) {
+/* Текст под постером*/
+@media screen and (width > 1600px) {
+  .text H2 {
+    font-size: 20px;
+  }
+  .text H1 {
+    font-size: 40px;
+  }
+  .down_text h1 {
+    font-size: 5vh;
+    line-height: 1.2;
+  }
+  .down_text p {
+    font-size: 3vh;
+    line-height: 1.2;
+  }
   .button p {
     font-size: 3vh;
   }
 }
-/* Текст под постером*/
+@media screen and (width > 2000px) {
+  .text H2 {
+    font-size: 30px;
+  }
+  .text H1 {
+    font-size: 60px;
+  }
+}
 @font-face {
   font-family: "Bruce Forever";
   src: url(../../Font/bruce-forever/BruceForever.ttf);
