@@ -1050,6 +1050,127 @@
 }
 
 /* Стили всплывающего окна по-умолчанию */
+.text_center {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+.text_center H1 {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 0;
+  color: var(--red, #c83232);
+  font-family: Plus Jakarta Sans;
+  font-size: 7vh;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 68px; /* 141.667% */
+}
+
+.news_page {
+  display: grid;
+  gap: 3vw;
+  justify-content: center;
+}
+
+[class^=release-] {
+  display: grid;
+  width: 65vw;
+  grid-template-columns: auto auto;
+  gap: 3.5vw;
+  justify-items: start;
+}
+
+[class^=case-] {
+  display: grid;
+  text-align: left;
+}
+[class^=case-] img {
+  width: 404px;
+  height: 228px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+[class^=case-] span {
+  color: var(--Noble-Black-400, #686B6E);
+  /* Body/S/Medium */
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.15px;
+  align-self: end;
+  padding-bottom: 1vh;
+}
+[class^=case-] h2 {
+  color: var(--Noble-Black-700, #131619);
+  /* Heading/XS/Bold */
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+  margin: 0;
+  height: 1vh;
+}
+[class^=case-] p {
+  color: var(--Noble-Black-400, #686B6E);
+  /* Body/L/Medium */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+[class^=case-] a {
+  color: var(--Red-Power-600, #D0302F);
+  /* Body/L/SemiBold */
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.15px;
+  text-decoration: none;
+}
+
+.pages {
+  display: grid;
+  justify-content: center;
+  margin: 15vh 0 15vh 0;
+}
+
+.container {
+  display: grid;
+  width: 25vw;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+[class^=page-] {
+  display: grid;
+}
+[class^=page-] a {
+  text-decoration: none;
+  color: var(--Grey, #646464);
+  font-family: Bruce Forever;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  transition: 0.6s;
+}
+[class^=page-] a:hover {
+  color: #000000;
+  transition: 0.6s;
+}
+
 body {
   transition: 1s;
   margin: 0;
