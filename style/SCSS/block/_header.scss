@@ -11,7 +11,7 @@
     gap: 2vh;
     align-items: center;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: repeat(1, 9vh);
+    grid-template-rows: repeat(1, 5vh);
     justify-content: start;
 
     &_scrolled {
@@ -20,12 +20,11 @@
         animation-duration: 1s;
     }
     & a {
-        font-size: 1.5vh;
+        font-size: 1.1vh;
         transition: 0.7s;
-        display: inline-block;
-        color: #646464;
         text-decoration: none;
-        z-index: 1;
+        color: var(--Grey, #646464);
+        font-family: Bruce Forever;
     }
 }
 [class^="line-"] {

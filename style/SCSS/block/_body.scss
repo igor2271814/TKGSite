@@ -11,24 +11,6 @@
 }
 /* постер */
 /* Строка новостей */
-.text_center {
-    width: 100%;
-    margin-top: 2%;
-    text-align: center;
-}
-.text_center H1 {
-    display: inline;
-    vertical-align: middle;
-    margin-left: 0;
-    text-shadow:
-        0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(0, 0, 0, 0.1),
-        0px 18px 23px rgba(0, 0, 0, 0.1);
-    color: var(--red, #c83232);
-    font-family: Plus Jakarta Sans;
-    font-size: 7vh;
-    font-style: bold;
-}
 /* текст над строкой */
 .text {
     display: grid;
