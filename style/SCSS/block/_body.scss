@@ -20,24 +20,24 @@
     grid-template-columns: auto auto auto auto 4vh;
 
     H1 {
-    margin: auto 0;
-    display: inline;
-    float: left;
-    margin-left: 5%;
-    color: var(--red, #c83232);
-    font-family: Plus Jakarta Sans;
-    font-size: 5vh;
-    font-style: italic;
+        margin: auto 0;
+        display: inline;
+        float: left;
+        margin-left: 5%;
+        color: var(--red, #c83232);
+        font-family: Plus Jakarta Sans;
+        font-size: 5vh;
+        font-style: italic;
     }
     H2 {
-    transition: 1s;
-    display: inline;
-    color: var(--red, #c83232);
-    float: right;
-    padding-right: 15%;
-    font-family: Plus Jakarta Sans;
-    font-size: 2vh;
-    font-style: normal;
+        transition: 1s;
+        display: inline;
+        color: var(--red, #c83232);
+        float: right;
+        padding-right: 15%;
+        font-family: Plus Jakarta Sans;
+        font-size: 2vh;
+        font-style: normal;
     }
 }
 [class^="cell-"] {
@@ -124,7 +124,7 @@
 .poster_down {
     display: grid;
     margin: 0;
-    background: url(/TKGSite/images/test1.png) no-repeat center center;
+    background: url(/TKGSite/images/test1.jpeg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,7 +134,7 @@
 
     h1 {
         font-size: 7vh;
-        color: var(--Noble-Black-100, #E8E9E9);
+        color: var(--Noble-Black-100, #e8e9e9);
         font-family: Bruce Forever;
         font-style: normal;
         font-weight: 400;
@@ -203,11 +203,11 @@
         line-height: 32px; /* 160% */
     }
     video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    margin-left: 6%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        margin-left: 6%;
     }
 }
 .button {
@@ -267,7 +267,7 @@
     }
 }
 @media screen and (width > 2000px) {
-        .text {
+    .text {
         H2 {
             font-size: 30px;
         }

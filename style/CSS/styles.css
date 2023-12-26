@@ -400,14 +400,14 @@
 .poster_down {
   display: grid;
   margin: 0;
-  background: url(/TKGSite/images/test1.png) no-repeat center center;
+  background: url(/TKGSite/images/test1.jpeg) no-repeat center center;
   background-size: cover;
   width: 100vw;
   height: 70vh;
 }
 .poster_down h1 {
   font-size: 7vh;
-  color: var(--Noble-Black-100, #E8E9E9);
+  color: var(--Noble-Black-100, #e8e9e9);
   font-family: Bruce Forever;
   font-style: normal;
   font-weight: 400;
